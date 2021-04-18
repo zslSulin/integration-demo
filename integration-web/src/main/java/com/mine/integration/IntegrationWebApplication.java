@@ -1,4 +1,4 @@
-package com.example.integrationweb;
+package com.mine.integration;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

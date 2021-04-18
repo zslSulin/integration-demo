@@ -1,10 +1,10 @@
-package com.example.integrationservice;
+package com.mine.integration;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class IntegrationServiceApplicationTests {
+class IntegrationWebApplicationTests {
 
     @Test
     void contextLoads() {
