@@ -54,12 +54,20 @@
             <version>1.18.20</version>
         </dependency>
 
-        <!--状态机框架-->
+        <!--状态机框架 squirrel-->
         <dependency>
             <groupId>org.squirrelframework</groupId>
             <artifactId>squirrel-foundation</artifactId>
             <version>0.3.8</version>
         </dependency>
+
+        <!--状态机框架 spring statemachine-->
+        <dependency>
+            <groupId>org.springframework.statemachine</groupId>
+            <artifactId>spring-statemachine-core</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+
     </dependencies>
 
     <build>
