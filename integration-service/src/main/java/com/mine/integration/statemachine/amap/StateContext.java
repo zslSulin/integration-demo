@@ -8,10 +8,10 @@ package com.mine.integration.statemachine.amap;
  * @author chisu
  * @since 2021/04/27
  */
-public class StateContext {
+public class StateContext<C> {
 
     private String state;
 
-    private Object[] args;
+    private C args;
 
 }

@@ -10,10 +10,10 @@ package com.mine.integration.statemachine.amap;
  * @author chisu
  * @since 2021/04/27
  */
-public class StateAProcesser implements StateProcessor{
+public class StateAProcesser<T, C> implements StateProcessor<T, C>{
 
     @Override
-    public void action(StateContext context) throws Exception {
+    public ServiceResult<T> action(StateContext<C> context) throws Exception {
 
     }
 }

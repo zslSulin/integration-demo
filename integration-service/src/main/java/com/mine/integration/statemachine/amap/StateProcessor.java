@@ -10,13 +10,14 @@ package com.mine.integration.statemachine.amap;
  * @author chisu
  * @since 2021/04/27
  */
-public interface StateProcessor {
+public interface StateProcessor<T, C> {
 
     /**
      * 执行状态迁移入口
      *
      * @param context 上下文
      * @throws Exception
+     * @return
      */
-    void action(StateContext context) throws Exception;
+    ServiceResult<T> action(StateContext<C> context) throws Exception;
 }
