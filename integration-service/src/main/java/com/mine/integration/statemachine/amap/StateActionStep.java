@@ -1,5 +1,8 @@
 package com.mine.integration.statemachine.amap;
 
+import com.mine.integration.statemachine.amap.check.Checkable;
+import com.mine.integration.statemachine.amap.context.StateContext;
+
 /**
  * 状态迁移动作处理步骤
  *
@@ -14,6 +17,11 @@ public interface StateActionStep<T, C> {
     default void prepare(StateContext<C> context) {
 
     }
+
+    /**
+     * 获取状态校验器
+     */
+    Checkable getCheckable(StateContext<C> context);
 
     /**
      * 校验

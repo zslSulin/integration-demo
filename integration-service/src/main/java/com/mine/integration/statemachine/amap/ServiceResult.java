@@ -12,6 +12,8 @@ public class ServiceResult<T> {
 
     private T result;
 
+    private String msg;
+
     public Boolean getSuccess() {
         return success;
     }
@@ -33,5 +35,14 @@ public class ServiceResult<T> {
             return Boolean.FALSE;
         }
         return success;
+    }
+
+    public ServiceResult() {
+    }
+
+    public ServiceResult(T result, String msg) {
+        this.success = Boolean.TRUE;
+        this.result = result;
+        this.msg = msg;
     }
 }

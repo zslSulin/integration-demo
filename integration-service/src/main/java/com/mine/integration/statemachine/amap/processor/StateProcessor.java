@@ -1,4 +1,7 @@
-package com.mine.integration.statemachine.amap;
+package com.mine.integration.statemachine.amap.processor;
+
+import com.mine.integration.statemachine.amap.ServiceResult;
+import com.mine.integration.statemachine.amap.context.StateContext;
 
 /**
  * 状态机处理器接口

@@ -11,7 +11,7 @@ public interface OrderStateEvent {
     /**
      * 订单状态事件
      */
-    String getEventType();
+     String  getEventType();
 
     /**
      * 订单id

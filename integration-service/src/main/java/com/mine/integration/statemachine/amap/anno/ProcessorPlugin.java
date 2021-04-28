@@ -1,7 +1,5 @@
 package com.mine.integration.statemachine.amap.anno;
 
-import com.mine.integration.statemachine.amap.enums.OrderEventEnum;
-import com.mine.integration.statemachine.amap.enums.OrderStateEnum;
 import org.springframework.stereotype.Component;
 
 import java.lang.annotation.Documented;
@@ -12,28 +10,26 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * 状态机引擎的处理器注解标识
+ * 插件注解
  *
- * url_link: https://mp.weixin.qq.com/s/0GfCOUEw4svvSQVoShjJDw##
- *
- * @author chisu
+ * @author zsl
  */
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 @Inherited
 @Component
-public @interface OrderProcessor {
+public @interface ProcessorPlugin {
 
     /**
      * 指定状态，state不能同时存在
      */
-    OrderStateEnum[] state() default {};
+    String[] state() default {};
 
     /**
      * 订单操作事件
      */
-    OrderEventEnum event();
+    String event();
 
     /**
      * 业务

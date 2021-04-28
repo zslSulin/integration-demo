@@ -1,4 +1,4 @@
-package com.mine.integration.statemachine.amap;
+package com.mine.integration.statemachine.amap.check;
 
 import java.util.Collections;
 import java.util.List;
