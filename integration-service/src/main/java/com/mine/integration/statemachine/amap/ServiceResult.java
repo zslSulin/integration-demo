@@ -38,6 +38,7 @@ public class ServiceResult<T> {
     }
 
     public ServiceResult() {
+        this.success = Boolean.TRUE;
     }
 
     public ServiceResult(T result, String msg) {

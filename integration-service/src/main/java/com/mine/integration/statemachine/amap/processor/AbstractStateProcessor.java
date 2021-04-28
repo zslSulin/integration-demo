@@ -69,4 +69,8 @@ public abstract class AbstractStateProcessor<T, C> implements StateProcessor<T, 
             throw e;
         }
     }
+
+    public boolean filter(StateContext<C> context) {
+        return true;
+    };
 }

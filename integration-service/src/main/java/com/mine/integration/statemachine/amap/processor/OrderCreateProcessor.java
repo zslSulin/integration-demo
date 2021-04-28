@@ -11,6 +11,7 @@ import com.mine.integration.statemachine.amap.context.CreateOrderContext;
 import com.mine.integration.statemachine.amap.context.StateContext;
 import com.mine.integration.statemachine.amap.enums.OrderEventEnum;
 import com.mine.integration.statemachine.amap.enums.OrderStateEnum;
+import com.mine.integration.statemachine.amap.event.CreateEvent;
 import com.mine.integration.statemachine.amap.pojo.OrderInfo;
 import lombok.extern.slf4j.Slf4j;
 
@@ -77,6 +78,9 @@ public class OrderCreateProcessor extends AbstractStateProcessor<String, CreateO
 
     @Override
     public ServiceResult<String> action(String nextState, StateContext<CreateOrderContext> context) throws Exception {
+        CreateEvent createEvent = (CreateEvent) context.getOrderStateEvent();
+        // 促销信息
+        String promotion = this.doPromotion();
         return null;
     }
 
@@ -94,5 +98,9 @@ public class OrderCreateProcessor extends AbstractStateProcessor<String, CreateO
     @Override
     public void after(StateContext<CreateOrderContext> context) {
         // 事务消息
+    }
+
+    protected String doPromotion() {
+        return "1";
     }
 }

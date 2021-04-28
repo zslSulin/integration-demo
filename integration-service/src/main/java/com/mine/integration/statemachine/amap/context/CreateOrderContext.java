@@ -18,4 +18,5 @@ public class CreateOrderContext {
 
     private OrderInfo orderInfo;
 
+    private String estimatePriceInfo;
 }

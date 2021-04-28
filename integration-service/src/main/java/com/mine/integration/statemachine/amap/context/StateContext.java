@@ -1,7 +1,7 @@
 package com.mine.integration.statemachine.amap.context;
 
 import com.mine.integration.statemachine.amap.FsmOrder;
-import com.mine.integration.statemachine.amap.OrderStateEvent;
+import com.mine.integration.statemachine.amap.event.OrderStateEvent;
 import lombok.Getter;
 import lombok.Setter;
 

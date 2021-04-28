@@ -1,4 +1,4 @@
-package com.mine.integration.statemachine.amap;
+package com.mine.integration.statemachine.amap.event;
 
 /**
  * 订单状态迁移事件
