@@ -79,6 +79,13 @@
             <version>3.0.0</version>
         </dependency>
 
+        <!-- liteFlow 流程引擎 -->
+        <dependency>
+            <groupId>com.yomahub</groupId>
+            <artifactId>liteflow-spring-boot-starter</artifactId>
+            <version>2.5.4</version>
+        </dependency>
+
     </dependencies>
 
     <build>
