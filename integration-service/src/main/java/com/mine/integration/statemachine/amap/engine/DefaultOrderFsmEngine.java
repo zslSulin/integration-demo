@@ -51,6 +51,14 @@ public class DefaultOrderFsmEngine implements OrderFsmEngine{
         // 执行处理逻辑
         return stateProcessor.action(context);
     }
+
+    /**
+     * 获取状态机执行器
+     *
+     * @param context 状态机上下文
+     * @param <T> 订单事件
+     * @return 对应执行器
+     */
     private <T> StateProcessor<T, ?> getStateProcessor(StateContext<?> context) {
         OrderStateEvent stateEvent = context.getOrderStateEvent();
         FsmOrder fsmOrder = context.getFsmOrder();
@@ -71,7 +79,6 @@ public class DefaultOrderFsmEngine implements OrderFsmEngine{
                 processorResult.add(processor);
             }
         }
-
 
         if (CollectionUtils.isEmpty(processorResult)) {
 //            throw new FsmException(ErrorCodeEnum.NOT_FOUND_PROCESSOR);
